@@ -1,3 +1,115 @@
 theme: jekyll-theme-minimal
 title: Evan Dupas-Benhamou
 description: Bookmark this to keep an eye on my project updates!
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+exclude:
+  - README.md
+  - LICENSE 
+  - .gitignore
+  - .github/
+  - .vscode/
+  - .idea/
+  - node_modules/
+  - assets/css/
+  - assets/js/
+  - assets/images/
+  - _config.yml
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - .babelrc
+  - webpack.config.js
+  - .eslintrc.json
+  - .prettierrc
+  - .stylelintrc.json
+
+# Author
+author: Evan Dupas-Benhamou
+email: evan@example.com
+url: https://evanbnm.github.io
+github_username: evanbnm
+twitter_username: evanbnm
+linkedin_username: evanbnm
+
+# Social links
+social_links:
+  - name: GitHub
+    url: https://github.com/evanbnm
+    icon: fab fa-github
+  - name: Twitter
+    url: https://twitter.com/evanbnm
+    icon: fab fa-twitter
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/evanbnm
+    icon: fab fa-linkedin
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-include-cache
+  - jekyll-typogrify
+  - jekyll-emoji
+  - jekyll-remote-theme
+
+remote_theme: jekyll-theme-minimal/jekyll-theme-minimal
+emoji:
+  src: "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/"
+  style: "vertical-align:middle;"
+  class: "emoji"
+typogrify:
+  quotes: true
+  dashes: true
+  ellipses: true
+  ampersands: true
+  fractions: true
+  ordinals: true
+  smart_quotes: true
+  smart_dashes: true
+  smart_ellipses: true
+  smart_ampersands: true
+  smart_fractions: true
+  smart_ordinals: true
+  prevent_widows: true
+  
+# SEO
+seo:
+  title: Evan Dupas-Benhamou
+  description: Bookmark this to keep an eye on my project updates!
+  url: https://evanbnm.github.io
+
+# Sitemap
+sitemap:
+  exclude:
+    - /assets/
+    - /node_modules/
+    - /README.md
+    - /LICENSE
+    - /_config.yml
+    - /package.json
+
+# Feed
+feed:
+  path: "/feed.xml"
+  limit: 10
+
+# Archives
+archives:
+  enabled: true
+  layout: archive
+  permalinks: /archives/:year/:month/
+  types:
+    - categories
+    - tags
+
